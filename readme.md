@@ -11,6 +11,31 @@ $ npm install --global @joegesualdo/ava-react
 $ ava-react <test-file>
 ```
 
+## Important
+You must have this `.babelrc` at the root of you project:
+```javascript
+{
+  "presets": [
+    "react",
+    "es2015",
+    'stage-0',
+   ],
+	"env": {
+    "AVA": {
+      "plugins": [
+        [
+          "babel-plugin-webpack-loaders",
+          {
+            "config": "${CONFIG}",
+            "verbose": true
+          }
+        ]
+      ]
+    }
+  }
+}
+```
+
 ## Test
 ```
 $ npm test
