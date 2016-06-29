@@ -1,11 +1,14 @@
 {
   "name": "@joegesualdo/ava-react",
   "repository": "joegesualdo/ava-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Test react components with ava, no setup required.",
   "main": "./cli.js",
   "scripts": {
     "test": "./node_modules/ava/cli.js -v test.js"
+  },
+  "bin": {
+    "ava-react": "cli.js"
   },
   "devDependencies": {
     "ava": "^0.15.2",
