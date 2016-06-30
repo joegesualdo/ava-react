@@ -11,8 +11,8 @@ $ npm install --global @joegesualdo/ava-react
 $ ava-react <test-file>
 ```
 
-## Important
-You must have this `.babelrc` at the root of you project:
+## Setup
+1) You must have this `.babelrc` at the root of you project:
 ```javascript
 {
   "presets": [
@@ -35,6 +35,20 @@ You must have this `.babelrc` at the root of you project:
   }
 }
 ```
+2) You must have this in your `package.json` file:
+```
+{
+  ...
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+  ...
+}
+```
+
 
 ## Test
 ```

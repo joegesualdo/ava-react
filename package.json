@@ -1,7 +1,7 @@
 {
   "name": "@joegesualdo/ava-react",
   "repository": "joegesualdo/ava-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Test react components with ava, no setup required.",
   "main": "./cli.js",
   "scripts": {
